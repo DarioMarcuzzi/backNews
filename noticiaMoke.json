@@ -1,0 +1,10 @@
+[
+  {
+    "message": {
+      "role": "assistant",
+      "content": "Economía: Cooperativas y empresas autogestionadas podrán solicitar financiamiento para proyectos de diseño hasta el 30/6. Esta iniciativa busca incentivar y apoyar el desarrollo de proyectos asociativos que fomenten la economía solidaria y el trabajo en conjunto. Si sos parte de una cooperativa o empresa recuperada, no dudes en presentar tu proyecto y llevar adelante tu emprendimiento. ¡Aprovechá esta oportunidad!"
+    },
+    "finish_reason": "stop",
+    "index": 0
+  }
+]
