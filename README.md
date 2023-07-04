@@ -1,9 +1,8 @@
 
 ## backNews
-El servidor backNews es una parte integral de la aplicación MicroFrontQNEWSAPP. Es el encargado de buscar y formatear las lineas de tiempo de los usuarios de twitter, guardar su informacion en una base de datos para luego pasar 1 por 1 los datos a una inteligencia Artificial para crear las noticias.
-Esas noticias son guardadas en una base de datos para su posterior uso en un micro Front.
+El servidor BackNews es una parte integral de la aplicación MicroFrontQNEWSAPP. Es el encargado de buscar y formatear las líneas de tiempo de los usuarios de Twitter, guardar su información en una base de datos y luego pasar uno por uno los datos a una inteligencia artificial para crear las noticias. Estas noticias se guardan en una base de datos para su posterior uso en un micro Front.
 
-## Tecnologias
+## Tecnologías
  <ul>
    <li>NodeJS</li>
    <li>Express</li>
@@ -13,13 +12,13 @@ Esas noticias son guardadas en una base de datos para su posterior uso en un mic
 ## Funcionalidades
 <ul>
 <li>  
-Buscar, formatear y guardar la informacion de la linea de tiempo de una lista de usuarios en Twitter consultando una api externa
+Buscar, formatear y guardar la información de la línea de tiempo de una lista de usuarios en Twitter consultando una API externa.
 </li>
   <li>
-Pasar la informacion 1 por 1 a la api de chat GPT 3 generando la configuracion del prompt para generar noticias, haciendo una espera de 20s entre cada llamada, para luego formatear la respuesta de la api y guardarla en una base de datos local.
+Pasar la información uno por uno a la API de ChatGPT 3 para generar la configuración del prompt y crear noticias, haciendo una espera de 20 segundos entre cada llamada. Luego se formatea la respuesta de la API y se guarda en una base de datos local.
   </li>
   <li>
-Proporcionar la informacion de las noticias guardadas a las micro aplicaciones correspondientes.
+Proporcionar la información de las noticias guardadas a las microaplicaciones correspondientes.
   </li>
 </ul>
 
@@ -60,14 +59,14 @@ Ejecute el siguiente comando para iniciar el servidor:<strong> npm start.
 
 
 ## Requerimiento
-Precargar la base de datos, una vez levantado el servidor en el puerto correcto y configurado las variables de entorno utilizar las siguientes rutas en orden :
+Para precargar la base de datos, una vez que el servidor esté en funcionamiento en el puerto correcto y se hayan configurado las variables de entorno, utilice las siguientes rutas en orden:
 
 ![image](https://github.com/DarioMarcuzzi/backNews/assets/97201734/26454739-69e5-40c7-8a08-b9a8c563a489)
 
 <ol>
   <li>"localhost:3002/" ejecuta la funcion getUserTimeLineTwitter (encargada de obtener la linea de tiempo de cada usuario)</li>
-  <li>"localhost:3002/generatenews" ejecuta la funcion, generateShortNewsFromText (encargada de pasar la informacion 1 por 1 a la api de open IA)</li>
-  <li>Esperar a que se generen todas las noticias para luego consultar la base de datos, esto puede tardar un poco ya que hace una llamada cada 20 seg, en la consola verifica si la noticia fue creada con exito. </li>
+  <li>"localhost:3002/generatenews" ejecuta la funcion, generateShortNewsFromText encargada de pasar la información uno por uno a la API de OpenAI)</li>
+  <li>Espere a que se generen todas las noticias y luego consulte la base de datos. Esto puede tardar un poco, ya que se realiza una llamada cada 20 segundos. Verifique en la consola si la noticia se creó correctamente. </li>
 </ol>
 
 El servidor backNews ahora está en funcionamiento y listo para recibir solicitudes de la microaplicación.
