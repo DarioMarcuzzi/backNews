@@ -1,4 +1,3 @@
-# backNews
 
 ## backNews
 El servidor backNews es una parte integral de la aplicación MicroFrontQNEWSAPP. Es el encargado de buscar y formatear las lineas de tiempo de los usuarios de twitter, guardar su informacion en una base de datos para luego pasar 1 por 1 los datos a una inteligencia Artificial para crear las noticias.
